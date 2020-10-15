@@ -7,42 +7,50 @@
 	</head>
 
 	<body> 
-        <h1> ENCICLOPEDIA DE SALUD </h1>
-        <img src="medical-cross-3-1211403.jpg" height="100" width="200" alt=""/>
-        <p><a href="../index.html">Página principal</a></p>
-        <h2>Formulario de contacto</h2>
-        <p>Esta página contiene un formulario en el que el usuario tiene la posibilidad de introducir información</p>
+        <header>
+			<h1> ENCICLOPEDIA DE SALUD </h1>
+			<a href="../index.html"><img src="medical-cross-3-1211403.jpg" height="100" width="200" alt=""/></a>
+        </header>
+        <nav class="menu">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Formulario de contacto</h2>
+            <p>Esta página contiene un formulario en el que el usuario tiene la posibilidad de introducir información</p>
 
 
-        <form action="Respuestacontacto/Respuestacontacto.html" method="get">
-        <p>Asunto: <input type="text" name="nombre" id="nombre"></p>
-        <p>Comenarios o preguntas:</p>
-        <p><textarea name="comentarios" rows="10" cols="40"></textarea></p>
-        <p>Fecha de nacimiento: <input type="date" name="fecha" id="fecha"></p>
-        <p>Correo electrónico: <input type="email" name="Correo" id="Correo"></p>
-        <fieldset>
-            <legend>Sexo</legend>
-            <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre</label></p>
-            <p><label><input type="radio" name="Sexo" value="Mujer">Mujer</label></p>
-            <p><label><input type="radio" name="Sexo" value="Otro">Otro</label></p>
-        </fieldset>
-        <p>
-        Yo soy:
-        <select name="OS">
-            <option value="1">Paciente</option> 
-            <option value="2">Fabricante</option> 
-            <option value="3">Médico</option>
-            <option value="4">Educador</option> 
-            <option value="5">Científico</option> 
-            <option value="6">Periodista</option> 
-         </select>
-        </p>
-        <p>
-        Deseo recibir mas información: <input type="checkbox" name="informacion" value="" />
-        </p>
-            <input type="submit" value="Enviar">
-        </form>    
-            
+            <form action="Respuestacontacto/Respuestacontacto.html" method="get">
+            <p>Asunto: <input type="text" name="nombre" id="nombre"></p>
+            <p>Comenarios o preguntas:</p>
+            <p><textarea name="comentarios" rows="10" cols="40"></textarea></p>
+            <p>Fecha de nacimiento: <input type="date" name="fecha" id="fecha"></p>
+            <p>Correo electrónico: <input type="email" name="Correo" id="Correo"></p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre</label></p>
+                <p><label><input type="radio" name="Sexo" value="Mujer">Mujer</label></p>
+                <p><label><input type="radio" name="Sexo" value="Otro">Otro</label></p>
+            </fieldset>
+            <p>
+            Yo soy:
+            <select name="OS">
+                <option value="1">Paciente</option> 
+                <option value="2">Fabricante</option> 
+                <option value="3">Médico</option>
+                <option value="4">Educador</option> 
+                <option value="5">Científico</option> 
+                <option value="6">Periodista</option> 
+            </select>
+            </p>
+            <p>
+            Deseo recibir mas información: <input type="checkbox" name="informacion" value="" />
+            </p>
+                <input type="submit" value="Enviar">
+            </form>    
+        </main>
         <footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
     </body>
 </html>

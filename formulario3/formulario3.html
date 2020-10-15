@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Formulario 3</title>
+	</head>
+
+	<body> 
+        <header>
+			<h1> ENCICLOPEDIA DE SALUD </h1>
+			<a href="../index.html"><img src="medical-cross-3-1211403.jpg" height="100" width="200" alt=""/></a>
+        </header>
+        <nav class="menu">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Formulario de salud</h2>
+            <h4>Esta página contiene un formulario en el que el usuario tiene la posibilidad de introducir su información clínica. Deberás responder de forma obligatoria alguno de los campos para poder enviar el formulario.</h4>
+
+
+            <form action="respuestasalud/respuestasalud.html" method="get">
+            <p>Nombre completo: <input type="text" name="nombre" id="nombre" placeholder="Monica Galindo Lopez"></p>    
+            <p>¿Cuánta fiebre tienes o has llegado a tener?: <input type="number" name="fiebre" id="fiebre" placeholder="37" step="0.1" min="35" max="43" required></p>
+            <p>En caso de dolor de cabeza, introduzca el grado de dolor que siente en una escala del 1 al 10: <input type="range" name="grado_dolor" id="grado_dolor" min="1" max="10"></p>
+            <p>¿Qué te ocurre?:</p>
+            <p><textarea name="comentarios" rows="10" cols="40"></textarea></p>
+            <p>Fecha de nacimiento: <input type="date" name="fecha" id="fecha" required></p>
+            <p>Correo electrónico: <input type="email" name="Correo" id="Correo" placeholder="yeilou@gmail.com" required></p>
+            <p>Número de teléfono: <input type="tel" name="numero_telefono" id="numero_telefono" pattern="[0-9]{9}" title="Debes incluir un número de 9 dígitos" placeholder="627653422" required></p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre</label></p>
+                <p><label><input type="radio" name="Sexo" value="Mujer">Mujer</label></p>
+                <p><label><input type="radio" name="Sexo" value="Otro">Otro</label></p>
+            </fieldset>
+            <p>Color de ojos: <input type="color" name="color_ojos" id="color_ojos" ></p>
+
+                <input type="submit" value="Enviar">
+            </form>    
+        </main>
+        <footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
+    </body>
+</html>
+    

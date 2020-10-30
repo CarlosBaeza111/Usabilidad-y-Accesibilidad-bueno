@@ -28,18 +28,18 @@
             <div class="formu">
                 <form action="respuestasalud/respuestasalud.html" method="get">
                 <p>Nombre completo <i class="far fa-address-card"></i><input type="text" name="nombre" id="nombre" placeholder="Monica Galindo Lopez"></p>    
-                <p>¿Cuánta fiebre tienes o has llegado a tener?: <input type="number" name="fiebre" id="fiebre" placeholder="37" step="0.1" min="35" max="43" required></p>
+                <p>¿Cuánta fiebre tienes o has llegado a tener?: <input type="number" name="fiebre" id="fiebre" placeholder="37" step="0.1" min="35" max="43" required>*</p>
                 <p>En caso de dolor de cabeza, introduzca el grado de dolor que siente en una escala del 1 al 10: <input type="range" name="grado_dolor" id="grado_dolor" min="1" max="10"></p>
                 <p>¿Qué te ocurre?:</p>
                 <p><textarea name="comentarios" rows="10" cols="40"></textarea></p>
-                <p>Fecha de nacimiento <i class="far fa-calendar-alt"></i> <input type="date" name="fecha" id="fecha" required></p>
-                <p>Correo electrónico <i class="fas fa-at"></i> <input type="email" name="Correo" id="Correo" placeholder="yeilou@gmail.com" required></p>
-                <p>Número de teléfono <i class="fas fa-mobile-alt"></i> <input type="tel" name="numero_telefono" id="numero_telefono" pattern="[0-9]{9}" title="Debes incluir un número de 9 dígitos" placeholder="627653422" required></p>
+                <p>Fecha de nacimiento <i class="far fa-calendar-alt"></i> <input type="date" name="fecha" id="fecha" required>*</p>
+                <p>Correo electrónico <i class="fas fa-at"></i> <input type="email" name="Correo" id="Correo" placeholder="yeilou@gmail.com" required>*</p>
+                <p>Número de teléfono <i class="fas fa-mobile-alt"></i> <input type="tel" name="numero_telefono" id="numero_telefono" pattern="[0-9]{9}" title="Debes incluir un número de 9 dígitos" placeholder="627653422" required>*</p>
                 <fieldset>
                     <legend> Sexo </legend> 
-                            <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre <i class="fas fa-male"></label></i></p>
-                            <p><label><input type="radio" name="Sexo" value="Mujer">Mujer <i class="fas fa-female"></label></i></p>
-                            <p><label><input type="radio" name="Sexo" value="Otro">Otro <i class="fas fa-plane"></label></i></p>        
+                            <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre <i class="fas fa-male"></i></label></p>
+                            <p><label><input type="radio" name="Sexo" value="Mujer">Mujer <i class="fas fa-female"></i></label></p>
+                            <p><label><input type="radio" name="Sexo" value="Otro">Otro <i class="fas fa-plane"></i></label></p>        
                 </fieldset>
                 <p>Color de ojos: <input type="color" name="color_ojos" id="color_ojos" ></p>
                 <input type="submit" value="Enviar">

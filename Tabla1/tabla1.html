@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8"/>
         <title>Tabla 1</title>
+        <link rel="stylesheet" href="../estilos.css">
         <style>
             table, tr, th, td {
             border: 1px solid black;
@@ -13,22 +14,23 @@
     </head>
 
     <body> 
-        <header>
+        <div class="header">
 			<h1> ENCICLOPEDIA DE SALUD </h1>
 			<a href="../index.html"><img src="medical-cross-3-1211403.jpg" height="100" width="200" alt="icono de la encilopedia de salud"/></a>
-        </header>
-        <nav class="menu">
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a></li>
-			  <li><a href="../mapasitioweb/mapa.html">Mapa de la página web</a></li>
-            </ul>
-        </nav>
+		</div>
+	<main>
+		<div class="topnav">
+			
+			  <a href="../index.html">Inicio</a>
+			  <a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a>
+			  <a href="../mapasitioweb/mapa.html">Mapa de la página web</a>					
+		</div>
         <main>
-            <h2>Situación en la Comunidad Valenciana</h2>
-            En esta tabla se mostrara el total de fallecidos, recuperados y casos totales de COVID 19 en la Comunidad Valenciana, diferenciado por provinicias. 
+            <h1>Situación en la Comunidad Valenciana</h1>
+        <article>
+            <p>En esta tabla se mostrara el total de fallecidos, recuperados y casos totales de COVID 19 en la Comunidad Valenciana, diferenciado por provinicias.</p>
             <br>
-            <br>
+            
             <table class="egt">
                 <caption>Comunidad Valenciana</caption>
                 <tr>
@@ -62,13 +64,17 @@
             <h3>Más información</h3>
                 <p>Podemos observar en esta imagen las diferentes situaciones de COVID en la Comunidad Valenciana. Puedes informarte de la situación en cada provincia pinchando en la imagen la provincia que desees consultar.
                 </p>
-                <p><img src="Comunidad-Valenciana.gif" height="500" width="300" alt="Imagen Comunidad Valenciana" usemap="#comunidadvalenciana"/></p>
+                <figure><img src="Comunidad-Valenciana.gif" height="500" width="300" alt="Imagen Comunidad Valenciana" usemap="#comunidadvalenciana"/>
                     <map name="comunidadvalenciana">
                         <area alt="Castellon" shape="circle" coords="210,100,80" href="https://www.elperiodic.com/tema/coronavirus-castellon_1">
                         <area alt="Valencia" shape="rect" coords="3,190,259,350" href="https://eldesmarque.com/valencia/valencia-cf/noticias/239924-coronavirus-ultima-hora-en-valencia-fallecidos-contagiados">
                         <area alt="Alicante" shape="poly" coords="103,355,258,325,164,485,77,485" href="https://www.elperiodic.com/tema/coronavirus-alicante_3">
                     </map>
+                </figure>
+        </article>
         </main>
-        <footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
+        <div class="footer">
+            <footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
+            </div>
 	</body>
 </html>

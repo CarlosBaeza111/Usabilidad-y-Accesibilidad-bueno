@@ -4,65 +4,72 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Formulario 2</title>
+		<link rel="stylesheet" href="../estiloformulario.css">
+		<link rel="stylesheet" href="../estilos.css">
 	</head>
 
 	<body> 
-        <header>
+        <div class="header">
 			<h1> ENCICLOPEDIA DE SALUD </h1>
 			<a href="../index.html"><img src="medical-cross-3-1211403.jpg" height="100" width="200" alt="icono de la encilopedia de salud"/></a>
-		</header>
-		<nav class="menu">
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a></li>
-			  <li><a href="../mapasitioweb/mapa.html">Mapa de la página web</a></li>
-            </ul>
-        </nav>
+		</div>
+		<div class="topnav">
+			
+			  <a href="../index.html">Inicio</a>
+			  <a href="../Sobrenosotros/sobrenosotros.html">Sobre nosotros</a>
+			  <a href="../mapasitioweb/mapa.html">Mapa de la página web</a>
+		</div>
 		<main>
-			<h2>Formulario de búsqueda</h2>
+			<h1>Formulario de búsqueda</h1>
+		<article>
 			<p>Esta página contiene un formulario en el que el usuario tiene la posibilidad de realizar la búsqueda que le convenga.</p>
 			<p>
-			<form action="Respuestabusqueda/Respuestabusqueda.html" method="get">
-				Búsqueda:
-			<br>
-			<select name="OS">
-				<option value="1">Todos los campos</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="1" id="1">
-			<br>
-			<select name="OS">
-				<option value="1">Descripción</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="2" id="2">
-			<br>
-			<select name="OS">
-				<option value="1">Causas</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="3" id="3">
-			<br>
-			<select name="OS">
-				<option value="1">Síntomas</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="4" id="4">
-			<br>
-			<select name="OS">
-				<option value="1">Pruebas y exámenes</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="5" id="5">
-			<br>
-			<select name="OS">
-				<option value="1">Tratamiento</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="6" id="6">
-			<br>
-			<select name="OS">
-				<option value="1">Expectativas</option> 
-				<option label="2" value="2"></option> 
-			</select><input type="search" name="7" id="7">
-			<p><input type="submit" name="Buscar" id="Buscar" value="Buscar"></p> 
-			</form>
+				<div class="formu">
+					<form action="Respuestabusqueda/Respuestabusqueda.html" method="get">
+						Búsqueda:
+					<br>
+					<select name="OS">
+						<option value="1">Todos los campos</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="1" id="1">
+					<br>
+					<select name="OS">
+						<option value="1">Descripción</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="2" id="2">
+					<br>
+					<select name="OS">
+						<option value="1">Causas</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="3" id="3">
+					<br>
+					<select name="OS">
+						<option value="1">Síntomas</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="4" id="4">
+					<br>
+					<select name="OS">
+						<option value="1">Pruebas y exámenes</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="5" id="5">
+					<br>
+					<select name="OS">
+						<option value="1">Tratamiento</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="6" id="6">
+					<br>
+					<select name="OS">
+						<option value="1">Expectativas</option> 
+						<option label="2" value="2"></option> 
+					</select><input type="search" name="7" id="7">
+					<p><input type="submit" name="Buscar" id="Buscar" value="Buscar"></p> 
+					</form>
+				</div>
+			</article>
 		</main>
-		<footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
+		<div class="footer">
+			<footer>Enciclopedia de salud <br> Javier López <br> Carlos Baeza</footer>
+			</div>
 		
 	</body>
 </html>

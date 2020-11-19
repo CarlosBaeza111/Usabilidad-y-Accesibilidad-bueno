@@ -8,22 +8,17 @@
   
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
 }
 
 .columnaderecha{
 
   float: left;
-  width: 25%;
-  background-color: #ffffff;
-  margin: 10px;
+  width: 34%;
+  margin-left: 12px;
 }
 
 .columnaizquierda{
 
     float: left;
     width: 65%;
-
-
-    
 }

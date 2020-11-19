@@ -10,7 +10,9 @@
 .display-minimum {
     display: none;
 }
-
+.display-print {
+    display: none;
+}
 
 .header {
     background-color: rgb(226, 95, 95);
@@ -107,7 +109,7 @@ nav a:hover {
         color:rgb(46, 44, 167);
 }
 
-figure{
+figure, iframe{
     text-align: center;
 }
 
@@ -122,4 +124,6 @@ table{
     clear: both;
 }
 
-
+p{ 
+    color:black;
+}

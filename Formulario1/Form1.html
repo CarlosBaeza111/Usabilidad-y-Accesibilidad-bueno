@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../estilos.css">
 	</head>
 
-	<body"> 
+	<body> 
         <div class="header">
 			<h1> ENCICLOPEDIA DE SALUD </h1>
 			<a href="../index.html"><img src="medical-cross-3-1211403.jpg" height="100" width="200" alt="icono de la encilopedia de salud"/></a>
@@ -25,19 +25,28 @@
 
             <div class="formu">
                 <form action="Respuestacontacto/Respuestacontacto.html" method="get">
-                <p>Asunto: <input type="text" name="nombre" id="nombre"></p>
-                <p>Comenarios o preguntas:</p>
-                <p><textarea name="comentarios" rows="10" cols="40"></textarea></p>
-                <p>Fecha de nacimiento: <input type="date" name="fecha" id="fecha"></p>
-                <p>Correo electrónico: <input type="email" name="Correo" id="Correo"></p>
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                </p>
+                <label for="comentarios">Comentarios y preguntas:</label>
+                <textarea name="comentarios" rows="10" cols="40"></textarea>
+                <p>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha">
+                </p>
+                <p>
+                <label for="Correo">Correo electrónico:</label>
+                <input type="email" name="Correo" id="Correo">
+            </p>
                 <fieldset>
                     <legend>Sexo</legend>
-                    <p><label><input type="radio" name="Sexo" value="Hombre"> Hombre</label></p>
-                    <p><label><input type="radio" name="Sexo" value="Mujer">Mujer</label></p>
-                    <p><label><input type="radio" name="Sexo" value="Otro">Otro</label></p>
+                    <p><label for="hombre"><input type="radio" name="Sexo" value="Hombre"> Hombre</label></p>
+                    <p><label for="Mujer"><input type="radio" name="Sexo" value="Mujer">Mujer</label></p>
+                    <p><label for="Otro"><input type="radio" name="Sexo" value="Otro">Otro</label></p>
                 </fieldset>
                 <p>
-                Yo soy:
+                <label for="OS">Yo soy:</label>
                 <select id="OS">
                     <option label="paciente">Paciente</option> 
                     <option label="fabricante">Fabricante</option> 
@@ -48,8 +57,8 @@
                 </select>
                 </p>
                 <p>
-                <p>
-                Deseo recibir mas información: <input type="checkbox" name="informacion" value="" />
+                <label for="informacion">Deseo recibir más informacion:</label> 
+                <input type="checkbox" name="informacion" value="" />
                 </p>
                     <div class="botones">
                         <input type="submit" value="Enviar">
